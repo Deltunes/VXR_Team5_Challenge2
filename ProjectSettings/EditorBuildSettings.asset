@@ -10,3 +10,6 @@ EditorBuildSettings:
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: d67abc1d8084369448cf290f52e484f4, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3c964ddd7e645f84da1a2adc01eb890b, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 605878516538c1c4aaafa994e050022a, type: 2}
