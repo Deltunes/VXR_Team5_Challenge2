@@ -1,14 +1,18 @@
+using System.Collections;
+using TMPro.EditorUtilities;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class PrintPositionOnCollide : MonoBehaviour
+public class TeleportScript : MonoBehaviour
 {
     [SerializeField] GameObject player;
     private Vector3 homePos;
     private XRGrabInteractable _grabInteractable;
     // 0 = Inactive, 1 = held, 2 = thrown
     private int isActive = 0;
+
+    [SerializeField] private CameraFade _blackscreenFade;
 
     private void Start()
     {
@@ -38,6 +42,7 @@ public class PrintPositionOnCollide : MonoBehaviour
             if (collision.gameObject.tag == "Teleportable")
             {
                 isActive = 0;
+                StartCoroutine(fadedelayunfade(0.8f));
                 Vector3 playerNewPos = player.transform.position;
                 playerNewPos.x = transform.position.x;
                 playerNewPos.z = transform.position.z;
@@ -45,5 +50,14 @@ public class PrintPositionOnCollide : MonoBehaviour
                 transform.position = homePos;
             }
         }
+    }
+
+    private IEnumerator fadedelayunfade(float delay)
+    {
+        _blackscreenFade.Fade(true);
+
+        yield return new WaitForSeconds(delay);
+
+        _blackscreenFade.Fade(false);
     }
 }
