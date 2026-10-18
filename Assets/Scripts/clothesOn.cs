@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-public class clothesOn : MonoBehaviour
+public class teethBrushed : MonoBehaviour
 {
     private XRGrabInteractable _grabInteractable;
 
