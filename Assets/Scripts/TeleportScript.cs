@@ -81,8 +81,6 @@ public class TeleportScript : MonoBehaviour
         if(isActive == 2)
         {
             isActive = 0;
-            StartCoroutine(fadedelayunfade(0.3f));
-            yield return new WaitForSeconds(0.07f);
             AuSo.PlayOneShot(telefail);
             transform.position = homePos;
             transform.localRotation = homeRot;
