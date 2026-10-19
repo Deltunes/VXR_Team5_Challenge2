@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 261884012396827613}
   - component: {fileID: 7090696183349426682}
   - component: {fileID: 764482348592179639}
-  - component: {fileID: 7351371684319458484}
+  - component: {fileID: 5091681565674302642}
   m_Layer: 0
   m_Name: cleanLaundry
   m_TagString: Untagged
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &7351371684319458484
+--- !u!114 &5091681565674302642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -15,6 +15,7 @@ public class trackTasks : MonoBehaviour
 
     public void checkProgress()
     {
+        print("Progress check!\nlaundry: " + laundryDone + "\nclothes: " + clothesDone + "\nteeth: " + teethDone);
         if (laundryDone == true && clothesDone == true && teethDone == true)
         {
             print("Tasks complete!");

@@ -16,7 +16,7 @@ public class clothesOn : MonoBehaviour
 
     private void PickedUp(SelectEnterEventArgs args)
     {
-        taskManager.clothesDone = true;
+        taskManager.teethDone = true;
         taskManager.checkProgress();
         Destroy(gameObject);
     }

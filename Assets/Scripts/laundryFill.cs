@@ -21,7 +21,6 @@ public class laundryFill : MonoBehaviour
             laundryCount += 1;
             if (laundryCount >= maxLaundry)
             {
-                print("Laundry Machine Filled!");
                 taskManager.laundryDone = true;
                 taskManager.checkProgress();
                 spawnCleanLaundry();
