@@ -5,6 +5,7 @@ public class trackTasks : MonoBehaviour
     public bool laundryDone;
     public bool clothesDone;
     public bool teethDone;
+    public bool allTasksComplete;
 
     private void Start()
     {
@@ -19,6 +20,7 @@ public class trackTasks : MonoBehaviour
         if (laundryDone == true && clothesDone == true && teethDone == true)
         {
             print("Tasks complete!");
+            allTasksComplete = true;
         }
     }
 }

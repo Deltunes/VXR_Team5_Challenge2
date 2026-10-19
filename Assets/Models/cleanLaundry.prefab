@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 261884012396827613}
   - component: {fileID: 7090696183349426682}
   - component: {fileID: 764482348592179639}
-  - component: {fileID: 5091681565674302642}
   m_Layer: 0
   m_Name: cleanLaundry
   m_TagString: Untagged
@@ -272,19 +271,3 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &5091681565674302642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3841621654385488189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 0}
-  _blackscreenFade: {fileID: 0}
-  telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
-  telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}

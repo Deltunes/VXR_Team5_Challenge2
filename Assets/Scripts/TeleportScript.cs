@@ -1,11 +1,13 @@
 using System.Collections;
+using Unity.XR.CoreUtils;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using static UnityEngine.GraphicsBuffer;
 
 public class TeleportScript : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    [SerializeField] private XROrigin xrOrigin;
     private Vector3 homePos;
     private Quaternion homeRot;
     private XRGrabInteractable _grabInteractable;
@@ -25,7 +27,7 @@ public class TeleportScript : MonoBehaviour
         homePos = transform.position;
         homeRot = transform.localRotation;
         // Sets up audio source by pulling from player for easier script setup
-        AuSo = player.GetComponent<AudioSource>();
+        AuSo = xrOrigin.GetComponent<AudioSource>();
         // 
         _grabInteractable.selectEntered.AddListener(PickedUp);
         _grabInteractable.selectExited.AddListener(LetGo);
@@ -50,10 +52,9 @@ public class TeleportScript : MonoBehaviour
                 isActive = 0;
                 StartCoroutine(fadedelayunfade(0.5f));
                 AuSo.PlayOneShot(telesuccess);
-                Vector3 playerNewPos = player.transform.position;
-                playerNewPos.x = transform.position.x;
-                playerNewPos.z = transform.position.z;
-                player.transform.position = playerNewPos;
+                Vector3 target = transform.position;
+                target.y = xrOrigin.Camera.transform.position.y;
+                xrOrigin.MoveCameraToWorldLocation(target);
                 transform.position = homePos;
                 transform.localRotation = homeRot;
             }

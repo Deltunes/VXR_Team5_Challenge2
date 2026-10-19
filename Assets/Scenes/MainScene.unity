@@ -119,6 +119,118 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2345335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2345339}
+  - component: {fileID: 2345338}
+  - component: {fileID: 2345337}
+  - component: {fileID: 2345336}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &2345336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345335}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &2345337
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345335}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 558d0b13c854d134ba0692bcf2d6bf00, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &2345338
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345335}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &2345339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.353, y: 1.003, z: 6.7981}
+  m_LocalScale: {x: 1, y: 2.048211, z: 0.0375}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4211982
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -1041,7 +1153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -1185,22 +1297,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!114 &78619865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78619858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
-  _blackscreenFade: {fileID: 621999975}
-  telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
-  telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
 --- !u!1 &85669888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,7 +1595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca106da5ac97de418cf1ca51117f1c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.995
+      value: -2.706
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca106da5ac97de418cf1ca51117f1c0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1507,7 +1603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca106da5ac97de418cf1ca51117f1c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.953
+      value: 2.645
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ca106da5ac97de418cf1ca51117f1c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1584,7 +1680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -2078,7 +2174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -2216,7 +2312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -2600,6 +2696,67 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273944697}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &281077165
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 871240888316662881, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_Name
+      value: NewFurniture
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.019999797
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6098881964702603133, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2298305159482974965, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3732778078897558458, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 571599466}
+  m_SourcePrefab: {fileID: 100100000, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
 --- !u!1 &284305029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8582599280951809028, guid: 830fe10b6a0738f4f9a3167d492daf81, type: 3}
@@ -2738,7 +2895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -3031,7 +3188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -3213,6 +3370,74 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.12737365, y: 0.0200001, z: 0.16086188}
   m_Center: {x: 0.000000007450581, y: 0.010000018, z: 0.0000330545}
+--- !u!1 &344996464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344996465}
+  - component: {fileID: 344996467}
+  - component: {fileID: 344996466}
+  m_Layer: 0
+  m_Name: keyDetect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &344996465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344996464}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.708, y: 0.851592, z: 4.943}
+  m_LocalScale: {x: 1.0512401, y: 1.041, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1246367078}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &344996466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344996464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd0daa5d441c2ab44a7c07520fdaf844, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  anim: {fileID: 698087412}
+  taskManager: {fileID: 1368497657}
+--- !u!65 &344996467
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344996464}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.19, y: -0.21, z: 0.09}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &356865311
 GameObject:
   m_ObjectHideFlags: 0
@@ -3484,7 +3709,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.1
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &357467576
 GameObject:
@@ -3876,7 +4101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -4166,7 +4391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -4848,7 +5073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -5738,7 +5963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -6313,7 +6538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a5bccd1f1883074080736586248726b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a5bccd1f1883074080736586248726b, type: 3}
       propertyPath: m_LocalRotation.x
@@ -6321,7 +6546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a5bccd1f1883074080736586248726b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a5bccd1f1883074080736586248726b, type: 3}
       propertyPath: m_LocalRotation.z
@@ -6333,7 +6558,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a5bccd1f1883074080736586248726b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7a5bccd1f1883074080736586248726b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6343,10 +6568,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7a5bccd1f1883074080736586248726b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a5bccd1f1883074080736586248726b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 698087412}
     - targetCorrespondingSourceObject: {fileID: -6896026421881962114, guid: 7a5bccd1f1883074080736586248726b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 159294428}
@@ -6468,6 +6700,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 560892012}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &571599458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3732778078897558458, guid: d73bc8f4eb5f7dd40849f055630b8b3a, type: 3}
+  m_PrefabInstance: {fileID: 281077165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &571599466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571599458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
+  xrOrigin: {fileID: 1262873951}
+  _blackscreenFade: {fileID: 621999975}
+  telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
+  telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
 --- !u!1 &577331377
 GameObject:
   m_ObjectHideFlags: 0
@@ -6517,7 +6770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -6975,7 +7228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -7157,6 +7410,118 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.0012999999, y: 0.00019999978, z: 0.0019999999}
   m_Center: {x: 0, y: 0.0000000018626451, z: 0.0009999999}
+--- !u!1 &596246660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 596246664}
+  - component: {fileID: 596246663}
+  - component: {fileID: 596246662}
+  - component: {fileID: 596246661}
+  m_Layer: 0
+  m_Name: Cube (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &596246661
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596246660}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &596246662
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596246660}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 558d0b13c854d134ba0692bcf2d6bf00, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &596246663
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596246660}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &596246664
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596246660}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.744, y: 1.003, z: 15.234}
+  m_LocalScale: {x: 2.725, y: 2.048211, z: 0.0375}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &621999970
 GameObject:
   m_ObjectHideFlags: 0
@@ -7368,7 +7733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -7727,7 +8092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d9521f6f317b6534a9393fcea2ce55a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.88
+      value: -7.633
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d9521f6f317b6534a9393fcea2ce55a0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7735,7 +8100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d9521f6f317b6534a9393fcea2ce55a0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.22
+      value: -1.066
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d9521f6f317b6534a9393fcea2ce55a0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7816,7 +8181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -8047,7 +8412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -8663,7 +9028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -8924,7 +9289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -9073,7 +9438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -9419,7 +9784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -9601,6 +9966,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.00065999996, y: 0.00065999985, z: 0.0012189227}
   m_Center: {x: 0, y: 0.0000000018626451, z: 0.0006105384}
+--- !u!1 &698087411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7a5bccd1f1883074080736586248726b, type: 3}
+  m_PrefabInstance: {fileID: 558988177}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &698087412
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698087411}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85bbf512c35b0ce4682010c0c8a5db0a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &703055317
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9712,7 +10104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -10000,7 +10392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -10346,7 +10738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -10906,7 +11298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -11377,7 +11769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -11791,7 +12183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -12392,6 +12784,7 @@ Transform:
   - {fileID: 338011668}
   - {fileID: 741152909}
   - {fileID: 1659594724}
+  - {fileID: 2127759814}
   - {fileID: 1444144372}
   - {fileID: 1218578665}
   - {fileID: 1527948122}
@@ -12449,7 +12842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -12829,7 +13222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -13180,7 +13573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -13666,71 +14059,6 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
---- !u!1001 &919564022
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.6648293
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.000000010216983
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -12.89
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4883244574693499969, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.2776
-      objectReference: {fileID: 0}
-    - target: {fileID: -4883244574693499969, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.1525
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
-      propertyPath: m_Name
-      value: objects
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7feee6ef54ec6f54e82ee612babb6bb7, type: 3}
 --- !u!1 &920333425 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6833596869480391043, guid: 830fe10b6a0738f4f9a3167d492daf81, type: 3}
@@ -14666,7 +14994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -15142,7 +15470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -15858,7 +16186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -15911,7 +16239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -16199,7 +16527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -16632,7 +16960,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -16921,7 +17249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -17251,7 +17579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -18019,7 +18347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -18187,7 +18515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -18749,7 +19077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -18802,7 +19130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -19249,6 +19577,7 @@ Transform:
   - {fileID: 267191513}
   - {fileID: 560892013}
   - {fileID: 558988178}
+  - {fileID: 344996465}
   - {fileID: 1125092533}
   - {fileID: 1103657242}
   m_Father: {fileID: 0}
@@ -19302,7 +19631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -19590,7 +19919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -19939,8 +20268,8 @@ MonoBehaviour:
   m_Camera: {fileID: 1713681350}
   m_OriginBaseGameObject: {fileID: 1262873949}
   m_CameraFloorOffsetObject: {fileID: 861198473}
-  m_RequestedTrackingOriginMode: 2
-  m_CameraYOffset: 1.1176
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 1.65
 --- !u!4 &1262873952
 Transform:
   m_ObjectHideFlags: 0
@@ -19950,7 +20279,7 @@ Transform:
   m_GameObject: {fileID: 1262873949}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 6.831, y: -0.371, z: 2.976}
+  m_LocalPosition: {x: 6.831, y: -0.003, z: 2.976}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20220,7 +20549,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -20837,7 +21166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -21071,6 +21400,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cleanLaundry
       objectReference: {fileID: 0}
+    - target: {fileID: 5091681565674302642, guid: 703eef4eafcf4c04fb243a856cbf2f29, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 1262873951}
+    - target: {fileID: 5091681565674302642, guid: 703eef4eafcf4c04fb243a856cbf2f29, type: 3}
+      propertyPath: _blackscreenFade
+      value: 
+      objectReference: {fileID: 621999975}
     - target: {fileID: 7351371684319458484, guid: 703eef4eafcf4c04fb243a856cbf2f29, type: 3}
       propertyPath: player
       value: 
@@ -21131,6 +21468,7 @@ MonoBehaviour:
   laundryDone: 0
   clothesDone: 0
   teethDone: 0
+  allTasksComplete: 0
 --- !u!4 &1377187858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5056028577949049463, guid: a8b18a45205168247bdcec881e6ad815, type: 3}
@@ -21247,7 +21585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -21802,7 +22140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -22095,7 +22433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -22385,7 +22723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -23152,7 +23490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -23445,7 +23783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -23464,7 +23802,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1551154183
 Transform:
   m_ObjectHideFlags: 0
@@ -23716,7 +24054,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -24009,7 +24347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -24325,7 +24663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -24909,7 +25247,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -25197,7 +25535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -25490,7 +25828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -25855,7 +26193,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.1
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1681283880 stripped
 Transform:
@@ -25973,7 +26311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -26262,7 +26600,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -27090,7 +27428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -27386,6 +27724,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: cleanLaundry (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5091681565674302642, guid: 703eef4eafcf4c04fb243a856cbf2f29, type: 3}
+      propertyPath: xrOrigin
+      value: 
+      objectReference: {fileID: 1262873951}
+    - target: {fileID: 5091681565674302642, guid: 703eef4eafcf4c04fb243a856cbf2f29, type: 3}
+      propertyPath: _blackscreenFade
+      value: 
+      objectReference: {fileID: 621999975}
     - target: {fileID: 7351371684319458484, guid: 703eef4eafcf4c04fb243a856cbf2f29, type: 3}
       propertyPath: player
       value: 
@@ -27399,6 +27745,79 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 703eef4eafcf4c04fb243a856cbf2f29, type: 3}
+--- !u!1001 &1841063898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.336
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.765
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.772
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
+      propertyPath: m_Name
+      value: yourdidit
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 763fbda48871ace42a660666bead1e6a, type: 3}
 --- !u!1 &1870109692
 GameObject:
   m_ObjectHideFlags: 0
@@ -27448,7 +27867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -27794,7 +28213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -28296,7 +28715,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -28642,7 +29061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -28931,7 +29350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -29402,7 +29821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -29513,7 +29932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -29879,7 +30298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -30358,6 +30777,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: keys
       objectReference: {fileID: 0}
+    - target: {fileID: 3954153157174272162, guid: f94e27db9c2f02646841e438d07f404f, type: 3}
+      propertyPath: m_TagString
+      value: Keys
+      objectReference: {fileID: 0}
     - target: {fileID: 4437217661527325208, guid: f94e27db9c2f02646841e438d07f404f, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -30417,9 +30840,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3954153157174272162, guid: f94e27db9c2f02646841e438d07f404f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 78619864}
-    - targetCorrespondingSourceObject: {fileID: 3954153157174272162, guid: f94e27db9c2f02646841e438d07f404f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 78619865}
   m_SourcePrefab: {fileID: 100100000, guid: f94e27db9c2f02646841e438d07f404f, type: 3}
 --- !u!1001 &2024914968
 PrefabInstance:
@@ -30711,7 +31131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -31000,7 +31420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -31231,7 +31651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
-  player: {fileID: 1262873949}
+  xrOrigin: {fileID: 1262873951}
   _blackscreenFade: {fileID: 621999975}
   telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
   telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
@@ -31586,6 +32006,299 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109066841}
   m_Mesh: {fileID: -5007061731710209083, guid: 5cb5edda2c07bbd5198e74edad38b509, type: 3}
+--- !u!1001 &2127759813
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 835305142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.773
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.846
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 7c314941c565f344b98f2f07f0c0068b, type: 2}
+    - target: {fileID: 919132149155446097, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      propertyPath: m_Name
+      value: bottle1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2127759819}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2127759818}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2127759817}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2127759816}
+  m_SourcePrefab: {fileID: 100100000, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+--- !u!4 &2127759814 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+  m_PrefabInstance: {fileID: 2127759813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2127759815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e733141118ce1fe47b6a7e241f2588c8, type: 3}
+  m_PrefabInstance: {fileID: 2127759813}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2127759816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127759815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176950efc340224449ce1ae104e03311, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PrintPositionOnCollide
+  xrOrigin: {fileID: 1262873951}
+  _blackscreenFade: {fileID: 621999975}
+  telesuccess: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
+  telefail: {fileID: 8300000, guid: 570aa6785a12b2f43ba7983812ded1f5, type: 3}
+--- !u!114 &2127759817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127759815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable
+  m_InteractionManager: {fileID: 0}
+  m_Colliders: []
+  m_InteractionLayers:
+    m_Bits: 1
+  m_DistanceCalculationMode: 1
+  m_SelectMode: 0
+  m_FocusMode: 1
+  m_CustomReticle: {fileID: 0}
+  m_AllowGazeInteraction: 0
+  m_AllowGazeSelect: 0
+  m_OverrideGazeTimeToSelect: 0
+  m_GazeTimeToSelect: 0.5
+  m_OverrideTimeToAutoDeselectGaze: 0
+  m_TimeToAutoDeselectGaze: 3
+  m_AllowGazeAssistance: 0
+  m_FirstHoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastHoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_HoverExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstSelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastSelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SelectExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FirstFocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_LastFocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusEntered:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FocusExited:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Activated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Deactivated:
+    m_PersistentCalls:
+      m_Calls: []
+  m_StartingHoverFilters: []
+  m_StartingSelectFilters: []
+  m_StartingInteractionStrengthFilters: []
+  m_AutoFindParentInteractableInHierarchy: 0
+  m_ParentInteractableObject: {fileID: 0}
+  m_AttachTransform: {fileID: 0}
+  m_SecondaryAttachTransform: {fileID: 0}
+  m_UseDynamicAttach: 0
+  m_MatchAttachPosition: 1
+  m_MatchAttachRotation: 1
+  m_SnapToColliderVolume: 1
+  m_ReinitializeDynamicAttachEverySingleGrab: 1
+  m_AttachEaseInTime: 0.15
+  m_MovementType: 2
+  m_PredictedVisualsTransform: {fileID: 0}
+  m_VelocityDamping: 1
+  m_VelocityScale: 1
+  m_AngularVelocityDamping: 1
+  m_AngularVelocityScale: 1
+  m_TrackPosition: 1
+  m_SmoothPosition: 0
+  m_SmoothPositionAmount: 8
+  m_TightenPosition: 0.1
+  m_TrackRotation: 1
+  m_SmoothRotation: 0
+  m_SmoothRotationAmount: 8
+  m_TightenRotation: 0.1
+  m_TrackScale: 1
+  m_SmoothScale: 0
+  m_SmoothScaleAmount: 8
+  m_TightenScale: 0.1
+  m_ThrowOnDetach: 1
+  m_ThrowSmoothingDuration: 0.25
+  m_ThrowSmoothingCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  m_ThrowVelocityScale: 1.5
+  m_ThrowAngularVelocityScale: 1
+  m_ForceGravityOnDetach: 0
+  m_UnparentTransformOnGrab: 1
+  m_RetainTransformParent: 1
+  m_StartingSingleGrabTransformers: []
+  m_StartingMultipleGrabTransformers: []
+  m_AddDefaultGrabTransformers: 1
+  m_FarAttachMode: 0
+  m_LimitLinearVelocity: 0
+  m_LimitAngularVelocity: 0
+  m_MaxLinearVelocityDelta: 10
+  m_MaxAngularVelocityDelta: 20
+--- !u!54 &2127759818
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127759815}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &2127759819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127759815}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.074429914, y: 0.18069762, z: 0.038271118}
+  m_Center: {x: -0.00000004656613, y: 0.09042372, z: 0.000000013038516}
 --- !u!1 &2138150761
 GameObject:
   m_ObjectHideFlags: 0
@@ -31754,4 +32467,7 @@ SceneRoots:
   - {fileID: 1706458336}
   - {fileID: 1229089733}
   - {fileID: 1051493699}
-  - {fileID: 919564022}
+  - {fileID: 281077165}
+  - {fileID: 2345339}
+  - {fileID: 596246664}
+  - {fileID: 1841063898}

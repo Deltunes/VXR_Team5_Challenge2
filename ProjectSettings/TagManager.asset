@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Teleportable
   - DirtyLaundry
+  - Keys
   layers:
   - Default
   - TransparentFX
