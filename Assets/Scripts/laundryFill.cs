@@ -4,14 +4,13 @@ public class laundryFill : MonoBehaviour
 {
     private int laundryCount;
     [SerializeField] int maxLaundry;
-    public bool laundryComplete;
     [SerializeField] Transform cleanLaundrySpawnpoint;
     [SerializeField] GameObject cleanLaundry;
+    [SerializeField] trackTasks taskManager;
 
     private void Start()
     {
         laundryCount = 0;
-        laundryComplete = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -23,7 +22,8 @@ public class laundryFill : MonoBehaviour
             if (laundryCount >= maxLaundry)
             {
                 print("Laundry Machine Filled!");
-                laundryComplete = true;
+                taskManager.laundryDone = true;
+                taskManager.checkProgress();
                 spawnCleanLaundry();
             }
         }

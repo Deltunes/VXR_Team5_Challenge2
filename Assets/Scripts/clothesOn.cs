@@ -5,6 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class teethBrushed : MonoBehaviour
 {
     private XRGrabInteractable _grabInteractable;
+    [SerializeField] trackTasks taskManager;
 
     private void Start()
     {
@@ -15,6 +16,8 @@ public class teethBrushed : MonoBehaviour
 
     private void PickedUp(SelectEnterEventArgs args)
     {
+        taskManager.clothesDone = true;
+        taskManager.checkProgress();
         Destroy(gameObject);
     }
 }
